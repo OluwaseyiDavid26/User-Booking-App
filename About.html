@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+
+    <!-- Font Awesome (if needed) -->
+    <script
+      src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <!-- Main wrapper with gradient background -->
+    <div
+      class="hero-gradient min-h-screen bg-gradient-to-b from-[#053549]" style="--tw-gradient-to: #2e6c83;"
+    >
+      <!-- Header -->
+        <header
+        class="bg-[] flex items-center justify-between px-6 pr-[3.5rem] py-4 shadow-sm"
+      >
+        <div class="text-3xl text-white font-extrabold pl-[70px]">Logo</div>
+         <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+          <a
+            href="index.html"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >About</a
+          >
+          <a
+            href="contactUs.html"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >Book Now</a
+          >
+        </nav>
+        <button
+          id="menu-toggle"
+          class="md:hidden text-white text-3xl focus:outline-none"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        
+<div
+  id="mobile-menu"
+  class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
+>
+  <!-- Close button -->
+  <div class="flex justify-end">
+    <button id="close-menu" class="text-white text-3xl">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+  </div>
+   <ul class="space-y-4 text-lg">
+    <li><a href="index.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Home</a></li>
+    <li><a href="About.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">About</a></li>
+    <li><a href="contactUs.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Contact</a></li>
+    <!-- <li><a href="#" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Book Now</a></li> -->
+  </ul>
+   <div class="mt-10 px-4">
+    <a
+      href="#"
+      class="block text-center bg-white text-[#002f47] font-bold py-3 rounded-lg shadow-md"
+    >
+      Book Now
+    </a>
+  </div>
+
+      </header>
+
+    
+
+      <!-- About Content Section -->
+      <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-10">
+          <h2 class="text-4xl font-bold text-white mb-4">About Us</h2>
+          <p class="text-white text-xl mb-6">
+            Serene is a mobile application designed to simplify the process of
+            booking appointments at your favorite spa and barbing<br />
+            salons. We understand that finding the perfect time slot can often
+            be a hassle, involving multiple calls and back-and-forth <br />
+            communication. With Serene, you can browse available time slots,
+            select your preferred service, and book your <br />appointment with
+            just a few taps.
+          </p>
+          <p class="text-white text-xl mb-6">
+            Our app features a user-friendly interface, allowing you to easily
+            search for salons in your area, view their service<br />
+            offerings, and read reviews from other customers. You can also
+            manage your appointments, reschedule if needed, and <br />
+            receive reminders to ensure you never miss a session.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row mt-16 justify-center md:justify-start gap-4"
+          >
+            <a
+              href="#"
+              class="bg-[#053549] text-white px-6 py-3 rounded-md text-sm font-semibold transition"
+              >Get it on Google Play</a
+            >
+            <a
+              href="#"
+              class="bg-[#E8F2F0] px-6 py-3 rounded-md text-sm font-semibold border border-[#E0E0E0] hover:bg-[#e6efed] transition"
+              >Download on the App Store</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-[#053549] pt-12 pb-8">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Privacy Section with wide spacing -->
+        <div class="flex justify-evenly mb-6 text-[#517E90] text-sm">
+          <p class="hover:text-white text-white transition">Privacy policy</p>
+          <p class="hover:text-white text-white transition">Terms of service</p>
+          <p class="hover:text-white text-white transition">Contact us</p>
+        </div>
+
+        <!-- Centered Icons -->
+        <div class="mb-6 flex justify-center gap-6">
+          <a href="#" class="text-[#517E90] hover:text-white transition"
+            ><ion-icon name="logo-twitter" class="text-2xl"></ion-icon
+          ></a>
+          <a href="#" class="text-[#517E90] hover:text-white transition"
+            ><ion-icon name="logo-instagram" class="text-2xl"></ion-icon
+          ></a>
+          <a href="#" class="text-[#517E90] hover:text-white transition"
+            ><ion-icon name="logo-facebook" class="text-2xl"></ion-icon
+          ></a>
+        </div>
+        <div class="text-sm text-center text-[#517E90]">
+          &copy; 2025 Serene. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

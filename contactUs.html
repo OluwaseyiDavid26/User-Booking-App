@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Font and Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#053549]" style="--tw-gradient-to: #2e6c83;">
+    <!-- Header -->
+        <header
+        class="bg-[] flex items-center justify-between px-6 pr-[3.5rem] py-4 shadow-sm"
+      >
+        <div class="text-3xl text-white font-extrabold pl-[70px]">Logo</div>
+         <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+          <a
+            href="index.html"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >About</a
+          >
+          <a
+            href="contactUs.html"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >Book Now</a
+          >
+        </nav>
+        <button
+          id="menu-toggle"
+          class="md:hidden text-white text-3xl focus:outline-none"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        
+<div
+  id="mobile-menu"
+  class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
+>
+  <!-- Close button -->
+  <div class="flex justify-end">
+    <button id="close-menu" class="text-white text-3xl">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+  </div>
+   <ul class="space-y-4 text-lg">
+    <li><a href="index.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Home</a></li>
+    <li><a href="About.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">About</a></li>
+    <li><a href="contactUs.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Contact</a></li>
+    <!-- <li><a href="#" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Book Now</a></li> -->
+  </ul>
+   <div class="mt-10 px-4">
+    <a
+      href="#"
+      class="block text-center bg-white text-[#002f47] font-bold py-3 rounded-lg shadow-md"
+    >
+      Book Now
+    </a>
+  </div>
+
+      </header>
+    <!-- Contact Content Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-white mb-2">Contact Us</h2>
+      <p class="text-white mb-8">
+        We're here to help! Reach out to us with any questions or feedback.
+      </p>
+
+      <form class="space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+        />
+        <textarea
+          rows="4"
+          placeholder="Message"
+          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-[#053549] text-white px-6 py-2 rounded hover:bg-[#053549] transition"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <div class="mt-12">
+        <h3 class="text-2xl font-semibold text-white mb-4">
+          Contact Information
+        </h3>
+        <div class="space-y-4">
+          <div class="flex items-center gap-3 p-4">
+           <div class="bg-white border border-[] p-4 rounded-xl   inline-flex items-center justify-center">
+       <ion-icon name="call-outline" class="text-xl text-[]"></ion-icon>
+      </div>
+
+            <div>
+              <h4 class="font-semibold text-white">Phone</h4>
+              <p class="text-white text-sm">+1-555-123-4567</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 p-4">
+           <div class="bg-white border border-[] p-4 rounded-xl  inline-flex items-center justify-center">
+             <ion-icon name="mail-outline" class="text-xl text-[]"></ion-icon>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Email</h4>
+              <p class="text-white text-sm">support@serene.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
+        <div class="flex gap-4">
+          <div
+            class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
+          >
+            <ion-icon
+              name="logo-twitter"
+              class="text-2xl text-white"
+            ></ion-icon>
+            <span class="text-xs text-white">Twitter</span>
+          </div>
+          <div
+            class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
+          >
+            <ion-icon
+              name="logo-instagram"
+              class="text-2xl text-white"
+            ></ion-icon>
+            <span class="text-xs text-white">Instagram</span>
+          </div>
+          <div
+            class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
+          >
+            <ion-icon
+              name="logo-facebook"
+              class="text-2xl text-white"
+            ></ion-icon>
+            <span class="text-xs text-white">Facebook</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#053549] pt-12 pb-8">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Privacy Section with wide spacing -->
+        <div class="flex justify-evenly mb-6 text-[#517E90] text-sm">
+          <p class="hover:text-white text-white transition">Privacy policy</p>
+          <p class="hover:text-white text-white transition">Terms of service</p>
+          <p class="hover:text-white text-white transition">Contact us</p>
+        </div>
+
+        <!-- Centered Icons -->
+        <div class="mb-6 flex justify-center gap-6">
+          <a href="#" class="text-[#517E90] hover:text-white transition"
+            ><ion-icon name="logo-twitter" class="text-2xl"></ion-icon
+          ></a>
+          <a href="#" class="text-[#517E90] hover:text-white transition"
+            ><ion-icon name="logo-instagram" class="text-2xl"></ion-icon
+          ></a>
+          <a href="#" class="text-[#517E90] hover:text-white transition"
+            ><ion-icon name="logo-facebook" class="text-2xl"></ion-icon
+          ></a>
+        </div>
+        <div class="text-sm text-center text-[#517E90]">
+          &copy; 2025 Serene. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toggle Script -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
