@@ -29,3 +29,15 @@ body {
   margin-bottom: 1.5rem;
   flex-wrap: wrap; /* optional: avoids overlap on small screens */
 }
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}

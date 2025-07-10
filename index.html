@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Booking App</title>
+        <link rel="icon" type="image/png" href="img/logo-app.png" />
     <script src="scipt.js"></script>
     <script
       src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
@@ -25,6 +26,12 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +59,6 @@
        
         
          <nav class="hidden md:flex space-x-4 text-sm font-semibold">
-        
           <a
             href="About.html"
             class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
@@ -80,7 +86,6 @@
   id="mobile-menu"
   class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
 >
-  <!-- Close button -->
   <div class="flex justify-end">
     <button id="close-menu" class="text-white text-3xl">
       <ion-icon name="close-outline"></ion-icon>
@@ -105,7 +110,7 @@
     
 
       <section class="w-full bg-[#03B5EC80] text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="max-w-7xl mx-auto px-4 text-center" data-aos="fade-up"  data-aos-duration="5000"  data-aos-delay="200">
           <h1
             class="font-extrabold text-[48px] leading-[60px] tracking-[-0.05em] text-white mb-6"
           >
@@ -164,7 +169,7 @@
 
     <section class="w-full bg-[#012733] py-16">
       <div
-        class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 xl:px-16 text-center relative -top-133; top: -131px;"
+        class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 xl:px-16 text-center relative -top-133; top: -131px;" data-aos="zoom-in"  data-aos-duration="5000"  data-aos-delay="500"
       >
         <h2 class="text-[#00C8D6] text-3xl font-bold mb-14">
           Featured Services
@@ -176,26 +181,26 @@
           <div
             class="flex items-center justify-center gap-2 border-b-2 border-transparent hover:border-[#00C8D6] pb-2 transition"
           >
-            <img src="img/Vector.png" alt="Nails Icon" class="w-6 h-6" />
+            <img src="img/Vector.png" alt="Nails Icon" class="w-8 h-8" />
             <!-- <ion-icon name="cut-outline" class="text-xl text-white"></ion-icon> -->
             <span class="text-sm font-semibold">Nails</span>
           </div>
           <div
             class="flex items-center justify-center gap-2 border-b-2 border-transparent hover:border-[#00C8D6] pb-2 transition"
           >
-            <img src="img/vector-2.png" alt="Therapy Icon" class="w-6 h-6" />
+            <img src="img/vector-2.png" alt="Therapy Icon" class="w-8 h-8" />
             <span class="text-sm font-semibold">Therapy Section</span>
           </div>
           <div
             class="flex items-center justify-center gap-2 border-b-2 border-transparent hover:border-[#00C8D6] pb-2 transition"
           >
-            <img src="img/Vector-3.png" alt="Haircut Icon" class="w-6 h-6" />
+            <img src="img/Vector-3.png" alt="Haircut Icon" class="w-8 h-8" />
             <span class="text-sm font-semibold">Haircut</span>
           </div>
           <div
             class="flex items-center justify-center gap-2 border-b-2 border-transparent hover:border-[#00C8D6] pb-2 transition"
           >
-            <img src="img/Vector-4.png" alt="Spa Icon" class="w-6 h-6" />
+            <img src="img/Vector-4.png" alt="Spa Icon" class="w-8 h-8" />
             <span class="text-sm font-semibold">Spa</span>
           </div>
         </div>
@@ -207,7 +212,7 @@
       App Preview
     </h2>
 
-    <div class="flex flex-wrap justify-center gap-12">
+    <div class="flex flex-wrap justify-center gap-12" data-aos="zoom-out"  data-aos-duration="5000"  data-aos-delay="">
       <!-- Preview Card 1 -->
       <div
         class="bg-[#00384f] p-5 rounded-2xl 
@@ -249,47 +254,8 @@
     </div>
   </div>
 </section>
-
-<!-- 
-    <section class="w-full bg-[#012733] py-20">
-      <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center">
-        <h2 class="text-[#00C8D6] text-3xl md:text-4xl font-extrabold mb-12">
-          App Preview
-        </h2>
-
-        <div class="flex flex-wrap justify-center bg-[] shadow-[] gap-12">
-          <div
-            class="bg-[#00384f] p-5 rounded-2xl shadow-lg border border-[#00C8D6] w-[340px]"
-          >
-            <img
-              src="img/Rectangle (1).png"
-              alt="Preview 1"
-              class="w-[204px] h-[434px] object-contain mx-auto"
-            />
-          </div>
-          <div
-            class="bg-[#00384f] p-4 rounded-2xl shadow-lg border border-[#00C8D6] w-[340px]"
-          >
-            <img
-              src="img/Nothing Phone 1.png"
-              alt="Preview 2"
-              class="w-[388px] h-[434px] object-contain mx-auto"
-            />
-          </div>
-          <div
-            class="bg-[#00384f] p-4 rounded-2xl shadow-lg border border-[#00C8D6] w-[340px]"
-          >
-            <img
-              src="img/Rectangle (2).png"
-              alt="Preview 3"
-              class="w-[204px] h-[434px] object-contain mx-auto"
-            />
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section class="w-full bg-[#003652] py-16">
-      <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center" data-aos="zoom-in-up"  data-aos-duration="3000"  data-aos-delay="">
         <h2 class="text-[#00C8D6] text-3xl md:text-4xl font-extrabold mb-12">
           App Preview Gallery
         </h2>
@@ -341,7 +307,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Testimonial Card 1 -->
-          <div class="bg-white rounded-xl p-6 text-left shadow-md">
+          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-6.png"
@@ -360,7 +326,7 @@
           </div>
 
           <!-- Testimonial Card 2 -->
-          <div class="bg-white rounded-xl p-6 text-left shadow-md">
+          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-7.png"
@@ -379,7 +345,7 @@
           </div>
 
           <!-- Testimonial Card 3 -->
-          <div class="bg-white rounded-xl p-6 text-left shadow-md">
+          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-8.png"
@@ -396,7 +362,7 @@
               super simple and efficient.
             </p>
           </div>
-          <div class="bg-white rounded-xl p-6 text-left shadow-md">
+          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/Ellipse 40 (1).png"
@@ -413,7 +379,7 @@
            
             </p>
           </div>
-          <div class="bg-white rounded-xl p-6 text-left shadow-md">
+          <div class="bg-white rounded-xl p-6 text-left shadow-md"  data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/Ellipse 40.png"
@@ -430,7 +396,7 @@
               convenience and professional quality!
             </p>
           </div>
-          <div class="bg-white rounded-xl p-6 text-left shadow-md">
+          <div class="bg-white rounded-xl p-6 text-left shadow-md"  data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-6.png"
@@ -516,6 +482,17 @@
       </div>
     </footer>
   </body>
+  <script>
+     AOS.init({
+  duration: 2000, // Animation duration in ms
+  once: false,    // Animate every time the element comes into view
+  mirror: true,   // Animate when scrolling back up
+});
+
+  </script>
+
+
+
 </html>
 <!-- Code injected by live-server -->
 <script>
