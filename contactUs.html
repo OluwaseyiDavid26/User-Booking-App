@@ -25,157 +25,236 @@
       }
     </style>
   </head>
-  <body class="bg-gradient-to-b from-[#053549]" style="--tw-gradient-to: #2e6c83;">
+  <body
+    class="bg-gradient-to-b from-[#053549]"
+    style="--tw-gradient-to: #2e6c83"
+  >
     <!-- Header -->
-        <header
-        class="bg-[] flex items-center justify-between px-6 pr-[3.5rem] py-4 shadow-sm"
+    <header class="bg-[] px-6 pr-[3.5rem] py-4 shadow-sm">
+      <div
+        class="flex items-center justify-between bg-[#FFFFFF1A] rounded-full px-6 py-3"
       >
-        <a href="index.html" >
-           <img src="img/logo-app.png" alt="Logo" class="w-[110px] h-[43px] top-[42px] left-[87px] ml-10" /> 
-         </a>
-         <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+        <!-- Logo -->
+        <a href="index.html">
+          <img
+            src="img/logo-app.png"
+            alt="Logo"
+            class="w-[110px] h-[43px] ml-4"
+          />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+          <a
+            href="index.html"
+            class="text-white hover:text-[#03B5EC] hover:underline px-4 py-2 rounded-md transition"
+          >
+            Home
+          </a>
           <a
             href="About.html"
-            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
-            >About</a
+            class="text-white hover:text-[#03B5EC] hover:underline px-4 py-2 rounded-md transition"
           >
+            About
+          </a>
           <a
             href="contactUs.html"
-            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
-            >Contact</a
+            class="text-white hover:text-[#03B5EC] hover:underline px-4 py-2 rounded-md transition"
           >
+            Contact
+          </a>
           <a
             href="#"
             class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
-            >Book Now</a
           >
+            Book Now
+          </a>
         </nav>
+
+        <!-- Mobile Menu Button -->
         <button
           id="menu-toggle"
           class="md:hidden text-white text-3xl focus:outline-none"
         >
           <ion-icon name="menu-outline"></ion-icon>
         </button>
-        
-<div
-  id="mobile-menu"
-  class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
->
-  <!-- Close button -->
-  <div class="flex justify-end">
-    <button id="close-menu" class="text-white text-3xl">
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-  </div>
-   <ul class="space-y-4 text-lg">
-    <!-- <li><a href="index.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Home</a></li> -->
-    <li><a href="About.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">About</a></li>
-    <li><a href="contactUs.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Contact</a></li>
-
-  </ul>
-   <div class="mt-10 px-4">
-    <a
-      href="#"
-      class="block text-center bg-white text-[#002f47] font-bold py-3 rounded-lg shadow-md"
-    >
-      Book Now
-    </a>
-  </div>
-
-      </header>
-    <section class="py-20 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-white mb-2">Contact Us</h2>
-      <p class="text-white mb-8">
-        We're here to help! Reach out to us with any questions or feedback.
-      </p>
-
-      <form class="space-y-4">
-        <input
-          type="text"
-          placeholder="Your Name"
-          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
-        />
-        <input
-          type="email"
-          placeholder="Your Email"
-          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
-        />
-        <input
-          type="text"
-          placeholder="Subject"
-          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
-        />
-        <textarea
-          rows="4"
-          placeholder="Message"
-          class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
-        ></textarea>
-        <button
-          type="submit"
-          class="bg-[#053549] text-white px-6 py-2 rounded hover:bg-[#053549] transition"
-        >
-          Send Message
-        </button>
-      </form>
-
-      <div class="mt-12">
-        <h3 class="text-2xl font-semibold text-white mb-4">
-          Contact Information
-        </h3>
-        <div class="space-y-4">
-          <div class="flex items-center gap-3 p-4">
-           <div class="bg-white border border-[] p-4 rounded-xl   inline-flex items-center justify-center">
-       <ion-icon name="call-outline" class="text-xl text-[]"></ion-icon>
       </div>
 
-            <div>
-              <h4 class="font-semibold text-white">Phone</h4>
-              <p class="text-white text-sm">+1-555-123-4567</p>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
+      >
+        <div class="flex justify-end">
+          <button id="close-menu" class="text-white text-3xl">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="space-y-4 text-lg">
+          <li>
+            <a
+              href="index.html"
+              class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md"
+            >
+              Home
+            </a>
+
+            <a
+              href="About.html"
+              class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="contactUs.html"
+              class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-10 px-4">
+          <a
+            href="#"
+            class="block text-center bg-white text-[#002f47] font-bold py-3 rounded-lg shadow-md"
+          >
+            Book Now
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="py-10 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+        <!-- Left: Contact Form & Info -->
+        <div>
+          <h2 class="text-3xl font-bold text-white mb-2">Contact Us</h2>
+          <p class="text-white mb-8">
+            We're here to help! Reach out to us with any questions or feedback.
+          </p>
+
+          <!-- Form -->
+          <form class="space-y-4 mb-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+            />
+            <textarea
+              rows="4"
+              placeholder="Message"
+              class="w-full border border-[#A6D9EC] bg-transparent text-white rounded-md p-3 outline-none placeholder-[#A6D9EC]"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-[#053549] text-white px-6 py-2 rounded hover:bg-[#064b63] transition w-full md:w-auto"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <!-- Image (beneath the form on mobile) -->
+          <div class="md:hidden mb-8">
+            <img
+              src="img/about-img.png"
+              alt="Customer Support"
+              class="rounded-xl shadow-lg w-full max-w-[33rem] h-[300px] object-cover"
+            />
+          </div>
+
+          <!-- Contact Info -->
+          <div class="mt-12">
+            <h3 class="text-2xl font-semibold text-white mb-4">
+              Contact Information
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 p-4">
+                <div
+                  class="bg-white p-4 rounded-xl inline-flex items-center justify-center"
+                >
+                  <ion-icon
+                    name="call-outline"
+                    class="text-xl text-[#053549]"
+                  ></ion-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Phone</h4>
+                  <p class="text-white text-sm">+1-555-123-4567</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-4">
+                <div
+                  class="bg-white p-4 rounded-xl inline-flex items-center justify-center"
+                >
+                  <ion-icon
+                    name="mail-outline"
+                    class="text-xl text-[#053549]"
+                  ></ion-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Email</h4>
+                  <p class="text-white text-sm">support@serene.com</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex items-center gap-3">
-            <div class="flex items-center gap-3 p-4">
-           <div class="bg-white border border-[] p-4 rounded-xl  inline-flex items-center justify-center">
-             <ion-icon name="mail-outline" class="text-xl text-[]"></ion-icon>
-            </div>
-            <div>
-              <h4 class="font-semibold text-white">Email</h4>
-              <p class="text-white text-sm">support@serene.com</p>
+
+          <!-- Social Media -->
+          <div class="mt-10">
+            <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
+            <div class="flex gap-4">
+              <div
+                class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
+              >
+                <ion-icon
+                  name="logo-twitter"
+                  class="text-2xl text-white"
+                ></ion-icon>
+                <span class="text-xs text-white">Twitter</span>
+              </div>
+              <div
+                class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
+              >
+                <ion-icon
+                  name="logo-instagram"
+                  class="text-2xl text-white"
+                ></ion-icon>
+                <span class="text-xs text-white">Instagram</span>
+              </div>
+              <div
+                class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
+              >
+                <ion-icon
+                  name="logo-facebook"
+                  class="text-2xl text-white"
+                ></ion-icon>
+                <span class="text-xs text-white">Facebook</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mt-10">
-        <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
-        <div class="flex gap-4">
-          <div
-            class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
-          >
-            <ion-icon
-              name="logo-twitter"
-              class="text-2xl text-white"
-            ></ion-icon>
-            <span class="text-xs text-white">Twitter</span>
-          </div>
-          <div
-            class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
-          >
-            <ion-icon
-              name="logo-instagram"
-              class="text-2xl text-white"
-            ></ion-icon>
-            <span class="text-xs text-white">Instagram</span>
-          </div>
-          <div
-            class="w-14 h-14 rounded-md flex flex-col items-center justify-center border border-[#A6D9EC]"
-          >
-            <ion-icon
-              name="logo-facebook"
-              class="text-2xl text-white"
-            ></ion-icon>
-            <span class="text-xs text-white">Facebook</span>
-          </div>
+        <!-- Right: Image (Desktop only) -->
+        <div class="hidden md:flex justify-center">
+          <img
+            src="img/about-img.png"
+            alt="Customer Support"
+            class="rounded-xl shadow-lg w-[500px] max-w-md h-[440px] object-cover"
+          />
         </div>
       </div>
     </section>
@@ -206,18 +285,18 @@
         </div>
       </div>
     </footer>
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const closeBtn = document.getElementById("close-menu");
-  const menu = document.getElementById("mobile-menu");
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const closeBtn = document.getElementById("close-menu");
+      const menu = document.getElementById("mobile-menu");
 
-  toggle.addEventListener("click", () => {
-    menu.classList.remove("hidden");
-  });
+      toggle.addEventListener("click", () => {
+        menu.classList.remove("hidden");
+      });
 
-  closeBtn.addEventListener("click", () => {
-    menu.classList.add("hidden");
-  });
-</script>
+      closeBtn.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

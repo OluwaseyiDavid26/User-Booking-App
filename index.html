@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Booking App</title>
-        <link rel="icon" type="image/png" href="img/logo-app.png" />
+    <link rel="icon" type="image/png" href="img/logo-app.png" />
     <script src="scipt.js"></script>
     <script
       src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
@@ -21,17 +21,19 @@
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>    
+    ></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
 
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,129 +51,184 @@
   </head>
 
   <body class="body-gradient">
-    
     <div class="hero-gradient">
-     
-      <header
-        class="bg-[#03B5EC]/50 flex items-center justify-between px-6 pr-[3.5rem] py-4 shadow-sm"
-      >
-         <a href="index.html" >
-           <img src="img/logo-app.png" alt="Logo" class="w-[110px] h-[43px] top-[42px] left-[87px] ml-10" /> 
-         </a>
-       
-        
-         <nav class="hidden md:flex space-x-4 text-sm font-semibold">
-          <a
-            href="About.html"
-            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
-            >About</a
-          >
-          <a
-            href="contactUs.html"
-            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
-            >Contact</a
-          >
-          <a
-            href="#"
-            class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
-            >Book Now</a
-          >
-        </nav>
-        <button
-          id="menu-toggle"
-          class="md:hidden text-white text-3xl focus:outline-none"
+      <header class="bg-[#03B5EC]/50 px-6 pr-[3.5rem] py-4 shadow-sm">
+        <div
+          class="flex items-center justify-between bg-[#FFFFFF1A] rounded-full px-6 py-3"
         >
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-        
-<div
-  id="mobile-menu"
-  class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
->
-  <div class="flex justify-end">
-    <button id="close-menu" class="text-white text-3xl">
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-  </div>
-   <ul class="space-y-4 text-lg">
-    <!-- <li><a href="index.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Home</a></li> -->
-    <li><a href="About.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">About</a></li>
-    <li><a href="contactUs.html" class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md">Contact</a></li>
-  </ul>
-   <div class="mt-10 px-4">
-    <a
-      href="#"
-      class="block text-center bg-white text-[#002f47] font-bold py-3 rounded-lg shadow-md"
-    >
-      Book Now
-    </a>
-  </div>
+          <!-- Logo -->
+          <a href="index.html">
+            <img
+              src="img/logo-app.png"
+              alt="Logo"
+              class="w-[110px] h-[43px] ml-4"
+            />
+          </a>
 
+          <!-- Navigation -->
+          <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+            <a
+              href="index.html"
+              class="text-white hover:text-[#03B5EC] hover:underline px-4 py-2 rounded-md transition"
+            >
+              Home
+            </a>
+            <a
+              href="About.html"
+              class="text-white hover:text-[#03B5EC] hover:underline px-4 py-2 rounded-md transition"
+            >
+              About
+            </a>
+            <a
+              href="contactUs.html"
+              class="text-white hover:text-[#03B5EC] hover:underline px-4 py-2 rounded-md transition"
+            >
+              Contact
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-[#002f47] hover:bg-white px-4 py-2 rounded-md transition"
+            >
+              Book Now
+            </a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="md:hidden text-white text-3xl focus:outline-none"
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden fixed top-0 left-0 w-full h-full bg-[#03b5ec] z-50 flex flex-col px-6 py-10 space-y-6 text-white font-semibold transition-all duration-300"
+        >
+          <div class="flex justify-end">
+            <button id="close-menu" class="text-white text-3xl">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="space-y-4 text-lg">
+            <li>
+              <a
+                href="index.html"
+                class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md"
+              >
+                Home
+              </a>
+
+              <a
+                href="About.html"
+                class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="contactUs.html"
+                class="block hover:bg-white hover:text-[#002f47] px-4 py-2 rounded-md"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <div class="mt-10 px-4">
+            <a
+              href="#"
+              class="block text-center bg-white text-[#002f47] font-bold py-3 rounded-lg shadow-md"
+            >
+              Book Now
+            </a>
+          </div>
+        </div>
       </header>
-      
-    
+      <section class="bg-[#03B5EC]/50 py-10">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6"
+        >
+          <!-- LEFT SIDE (IMAGE) -->
+          <div class="flex-shrink-0">
+            <img
+              src="img/gemini-img.png"
+              alt="Hero"
+              class="w-full h-[390px] max-w-md rounded-lg shadow-lg"
+            />
+          </div>
 
-      <section class="w-full bg-[#03B5EC80] text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center" data-aos="fade-up"  data-aos-duration="5000"  data-aos-delay="200">
-          <h1
-            class="font-extrabold text-[48px] leading-[60px] tracking-[-0.05em] text-white mb-6"
-          >
-            <span class="text-[#03B5EC]">Booki, </span> Your Personal<br />
-            Wellness Concierge
-          </h1>
-          <p
-            class="text-white text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed"
-          >
-            Discover the ultimate convenience in self-care with Serene. Book
-            top-rated spa and barbing services directly to your doorstep
-            or preferred location.
-            Experience luxury, personalized care, and seamless scheduling
-            all in one app.
-          </p>
-          <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mt-8">
-  <a
-    href="#"
-    class="bg-[#053549] text-white px-6 py-4 rounded-md flex items-center gap-3 w-full sm:w-auto max-w-xs"
-  >
-    <ion-icon name="logo-google-playstore" class="text-4xl"></ion-icon>
-    <div class="flex flex-col leading-tight">
-      <span class="text-base">Download on</span>
-      <span class="text-xl font-semibold">Play Store</span>
-    </div>
-  </a>
-</div>
+          <!-- RIGHT SIDE (TEXT + BUTTONS) -->
+          <div class="md:ml-10 mt-6 md:mt-0 text-center md:text-left flex-1">
+            <h1
+              class="font-extrabold text-[48px] leading-[60px] tracking-[-0.05em] mb-8 text-white"
+            >
+              <span class="text-[#03B5EC]">BookiAfrica,</span>
+              Your Personal<br />
+              Wellness Concierge
+            </h1>
 
+            <p
+              class="text-white text-base md:text-lg mb-10 leading-relaxed max-w-2xl"
+            >
+              Discover the ultimate convenience in self-care with Serene. Book
+              top-rated spa and barbing services directly to your doorstep or
+              preferred location. Experience luxury, personalized care, and
+              seamless scheduling all in one app.
+            </p>
 
-         
+            <div class="flex flex-col sm:flex-row gap-6 mt-8">
+              <a
+                href="#"
+                class="bg-[#053549] text-white px-6 py-4 rounded-md flex items-center gap-3 w-full sm:w-auto max-w-xs"
+              >
+                <ion-icon
+                  name="logo-google-playstore"
+                  class="text-4xl"
+                ></ion-icon>
+                <div class="flex flex-col leading-tight">
+                  <span class="text-base">Download on</span>
+                  <span class="text-xl font-semibold">Play Store</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-         
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1000 100"
-      preserveAspectRatio="none"
-      style="
-        width: 100%;
-        border: 0px !important;
-        background: #012733;
-        margin: 0px !important;
-        transform: translateY(15px) scaleY(128%) rotate(360deg);
-        shape-rendering: geometricprecision;
-        position:sticky;
-        bottom: 0;
-      "
-    >
-      <path
-        class="elementor-shape-fill"
-        d="M0,100 Q500,0 1000,100 L1000,0 L0,0 Z"
-        fill=" #039ccb"
-      ></path>
-    </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100"
+        preserveAspectRatio="none"
+        style="
+          width: 100%;
+          border: 0px !important;
+          background: #012733;
+          margin: 0px !important;
+          transform: translateY(15px) scaleY(128%) rotate(360deg);
+          shape-rendering: geometricprecision;
+          position: sticky;
+          bottom: 0;
+        "
+      >
+        <path
+          class="elementor-shape-fill"
+          d="M0,100 Q500,0 1000,100 L1000,0 L0,0 Z"
+          fill=" #039ccb"
+        ></path>
+      </svg>
     </div>
 
     <section class="w-full bg-[#012733] py-16">
       <div
-        class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 xl:px-16 text-center relative -top-133; top: -131px;" data-aos="zoom-in"  data-aos-duration="5000"  data-aos-delay="500"
+        class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 xl:px-16 text-center relative -top-133; top: -131px;"
+        data-aos="zoom-in"
+        data-aos-duration="5000"
+        data-aos-delay="500"
       >
         <h2 class="text-[#00C8D6] text-3xl font-bold mb-14">
           Featured Services
@@ -209,107 +266,133 @@
       </div>
     </section>
     <section class="w-full bg-[#012733] py-20">
-  <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center">
-    <h2 class="text-[#00C8D6] text-3xl md:text-4xl font-extrabold mb-12">
-      App Preview
-    </h2>
+      <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center">
+        <h2 class="text-[#00C8D6] text-3xl md:text-4xl font-extrabold mb-12">
+          App Preview
+        </h2>
 
-    <div class="flex flex-wrap justify-center gap-12" data-aos="zoom-out"  data-aos-duration="5000"  data-aos-delay="">
-      <!-- Preview Card 1 -->
-      <div
-        class="bg-[#00384f] p-5 rounded-2xl 
-               shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] 
-               border border-[#00C8D6] w-[340px]"
-      >
-        <img
-          src="img/Rectangle (1).png"
-          alt="Preview 1"
-          class="w-[204px] h-[434px] object-contain mx-auto"
-        />
-      </div>
+        <div
+          class="flex flex-wrap justify-center gap-12"
+          data-aos="zoom-out"
+          data-aos-duration="5000"
+          data-aos-delay=""
+        >
+          <!-- Preview Card 1 -->
+          <div
+            class="bg-[#00384f] p-5 rounded-2xl shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] border border-[#00C8D6] w-[340px]"
+          >
+            <img
+              src="img/Rectangle (1).png"
+              alt="Preview 1"
+              class="w-[204px] h-[434px] object-contain mx-auto"
+            />
+          </div>
 
-      <!-- Preview Card 2 -->
-      <div
-        class="bg-[#00384f] p-5 rounded-2xl 
-               shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] 
-               border border-[#00C8D6] w-[340px]"
-      >
-        <img
-          src="img/Nothing Phone 1.png"
-          alt="Preview 2"
-          class="w-[388px] h-[434px] object-contain mx-auto"
-        />
-      </div>
+          <!-- Preview Card 2 -->
+          <div
+            class="bg-[#00384f] p-5 rounded-2xl shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] border border-[#00C8D6] w-[340px]"
+          >
+            <img
+              src="img/Nothing Phone 1 (2).png"
+              alt="Preview 2"
+              class="w-[388px] h-[434px] object-contain mx-auto"
+            />
+          </div>
 
-      <!-- Preview Card 3 -->
-      <div
-        class="bg-[#00384f] p-5 rounded-2xl 
-               shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] 
-               border border-[#00C8D6] w-[340px]"
-      >
-        <img
-          src="img/Rectangle (2).png"
-          alt="Preview 3"
-          class="w-[204px] h-[434px] object-contain mx-auto"
-        />
+          <!-- Preview Card 3 -->
+          <div
+            class="bg-[#00384f] p-5 rounded-2xl shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] border border-[#00C8D6] w-[340px]"
+          >
+            <img
+              src="img/Rectangle (2).png"
+              alt="Preview 3"
+              class="w-[204px] h-[434px] object-contain mx-auto"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
     <section class="w-full bg-[#003652] py-16">
-      <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center" data-aos="zoom-in-up"  data-aos-duration="3000"  data-aos-delay="">
+      <div
+        class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center"
+        data-aos="zoom-in-up"
+        data-aos-duration="3000"
+      >
+        <!-- Section Heading -->
         <h2 class="text-[#00C8D6] text-3xl md:text-4xl font-extrabold mb-12">
           App Preview Gallery
         </h2>
 
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center"
-        >
-          <div class="bg-[#00405e] rounded-xl border border-[#00C8D6] p-4">
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Gallery Card 1 -->
+          <div class="bg-[#00405e] rounded-xl border border-[#00C8D6] p-6">
             <img
               src="img/image-3.png"
               alt="Browse Services"
               class="w-full h-48 object-cover rounded-md mb-4"
             />
-         <p class="text-white text-base relative -left-[92px]">Browse Services</p>
+            <h4 class="text-white text-lg font-semibold mb-2">
+              Browse Services
+            </h4>
+            <p class="text-white text-sm">
+              Find the right tools and services to move your money, grow your
+              goals
+            </p>
           </div>
 
           <!-- Gallery Card 2 -->
-          <div class="bg-[#00405e] rounded-xl border border-[#00C8D6] p-4">
+          <div class="bg-[#00405e] rounded-xl border border-[#00C8D6] p-6">
             <img
               src="img/image-4.png"
               alt="Confirm Your Booking"
               class="w-full h-48 object-cover rounded-md mb-4"
             />
-            <p class="text-white text-base relative -left-[92px]">
+            <h4 class="text-white text-lg font-semibold mb-2">
               Confirm Your Booking
+            </h4>
+            <p class="text-white text-sm">
+              Ready when you are — confirm your booking and we’ll handle the
+              rest
             </p>
           </div>
 
           <!-- Gallery Card 3 -->
-          <div class="bg-[#00405e] rounded-xl border border-[#00C8D6] p-4">
+          <div class="bg-[#00405e] rounded-xl border border-[#00C8D6] p-6">
             <img
               src="img/image-5.png"
               alt="Meet Our Professionals"
               class="w-full h-48 object-cover rounded-md mb-4"
             />
-            <p class="text-white text-base relative -left-[92px]">
+            <h4 class="text-white text-lg font-semibold mb-2">
               Meet Our Professionals
+            </h4>
+            <p class="text-white text-sm">
+              Get to know the experts behind our product and your success
             </p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="bg-[#002C3A] py-20">
       <div class="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 text-center">
         <h2 class="text-[#00C8D6] text-3xl md:text-4xl font-extrabold mb-8">
           What Our Clients Say
         </h2>
-        <p class="text-white mb-8 text-xl">Discover a world of vibrant Appointment Booking app<br> with our User Friendly Interface</p>
+        <p class="text-white mb-8 text-xl">
+          Discover a world of vibrant Appointment Booking app<br />
+          with our User Friendly Interface
+        </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Testimonial Card 1 -->
-          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
+          <div
+            class="bg-white rounded-xl p-6 text-left shadow-md"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay=""
+          >
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-6.png"
@@ -328,7 +411,12 @@
           </div>
 
           <!-- Testimonial Card 2 -->
-          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
+          <div
+            class="bg-white rounded-xl p-6 text-left shadow-md"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay=""
+          >
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-7.png"
@@ -347,7 +435,12 @@
           </div>
 
           <!-- Testimonial Card 3 -->
-          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
+          <div
+            class="bg-white rounded-xl p-6 text-left shadow-md"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay=""
+          >
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-8.png"
@@ -364,7 +457,12 @@
               super simple and efficient.
             </p>
           </div>
-          <div class="bg-white rounded-xl p-6 text-left shadow-md" data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
+          <div
+            class="bg-white rounded-xl p-6 text-left shadow-md"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay=""
+          >
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/Ellipse 40 (1).png"
@@ -377,11 +475,17 @@
             </div>
 
             <p class="text-sm text-[#0F2D3F] leading-relaxed">
-              Yes Beauty truly transformed my outlook on life. Their compassionate care and expertise helped me regain my confidence in my vision.
-           
+              Yes Beauty truly transformed my outlook on life. Their
+              compassionate care and expertise helped me regain my confidence in
+              my vision.
             </p>
           </div>
-          <div class="bg-white rounded-xl p-6 text-left shadow-md"  data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
+          <div
+            class="bg-white rounded-xl p-6 text-left shadow-md"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay=""
+          >
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/Ellipse 40.png"
@@ -398,7 +502,12 @@
               convenience and professional quality!
             </p>
           </div>
-          <div class="bg-white rounded-xl p-6 text-left shadow-md"  data-aos="zoom-in"  data-aos-duration="3000"  data-aos-delay="">
+          <div
+            class="bg-white rounded-xl p-6 text-left shadow-md"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay=""
+          >
             <div class="flex items-center gap-4 mb-4">
               <img
                 src="img/image-6.png"
@@ -418,52 +527,50 @@
         </div>
       </div>
     </section>
-  <section class="bg-[#002C3A] py-20">
-  <div class="max-w-screen-lg mx-auto px-4">
-    <div
-      class="bg-[#013745] rounded-2xl p-10 
-             shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] 
-             text-center text-white"
-    >
-      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-8">
-        Built for both Business Owners and the Users
-      </h2>
-      <p class="text-[#B9D6DD] text-base md:text-lg mb-10">
-        Whether you're booking a service or managing one, Booki keeps
-        things smooth.  Real-time scheduling, instant payments, fewer
-        no-shows—everything synced and stress-free.
-      </p>
-
-      <p class="font-bold mb-8 text-xl">
-        Built for customers. Powered for businesses.  <br />
-        Simple to start. Strong enough to grow with you.
-      </p>
-
-      <div class="flex flex-col sm:flex-row justify-center mt-12 gap-6">
-        <a
-          href="#"
-          class="bg-white text-[#002C3A] px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-200 transition"
+    <section class="bg-[#002C3A] py-20">
+      <div class="max-w-screen-lg mx-auto px-4">
+        <div
+          class="bg-[#013745] rounded-2xl p-10 shadow-[0_0_60px_15px_rgba(0,200,214,0.4)] text-center text-white"
         >
-          Download for Business App
-        </a>
-        <a
-          href="#"
-           class="bg-white text-[#002C3A] px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-200 transition"
-        >
-          Download the User App
-        </a>
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-8">
+            Built for both Business Owners and the Users
+          </h2>
+          <p class="text-[#B9D6DD] text-base md:text-lg mb-10">
+            Whether you're booking a service or managing one, Booki keeps things
+            smooth.  Real-time scheduling, instant payments, fewer
+            no-shows—everything synced and stress-free.
+          </p>
+
+          <p class="font-bold mb-8 text-xl">
+            Built for customers. Powered for businesses.  <br />
+            Simple to start. Strong enough to grow with you.
+          </p>
+
+          <div class="flex flex-col sm:flex-row justify-center mt-12 gap-6">
+            <a
+              href="#"
+              class="bg-white text-[#002C3A] px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-200 transition"
+            >
+              Download for Business App
+            </a>
+            <a
+              href="#"
+              class="bg-white text-[#002C3A] px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-200 transition"
+            >
+              Download the User App
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <footer class="bg-[#053549] pt-12 pb-8">
       <div class="max-w-4xl mx-auto px-6">
         <!-- Privacy Section with wide spacing -->
         <div class="flex justify-evenly mb-6 text-[#517E90] text-sm">
-          <p class="hover:text-white  text-white   transition">Privacy policy</p>
+          <p class="hover:text-white text-white transition">Privacy policy</p>
           <p class="hover:text-white text-white transition">Terms of service</p>
-          <p class="hover:text-white  text-white transition">Contact us</p>
+          <p class="hover:text-white text-white transition">Contact us</p>
         </div>
 
         <!-- Centered Icons -->
@@ -485,16 +592,12 @@
     </footer>
   </body>
   <script>
-     AOS.init({
-  duration: 2000, // Animation duration in ms
-  once: false,    // Animate every time the element comes into view
-  mirror: true,   // Animate when scrolling back up
-});
-
+    AOS.init({
+      duration: 2000, // Animation duration in ms
+      once: false, // Animate every time the element comes into view
+      mirror: true, // Animate when scrolling back up
+    });
   </script>
-
-
-
 </html>
 <!-- Code injected by live-server -->
 <script>
@@ -561,4 +664,3 @@
     menu.classList.add("hidden");
   });
 </script>
-
