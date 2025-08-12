@@ -5,6 +5,12 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
+  min-width: 100vw;
+  overflow-x: hidden;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 .book-now {
   background-color: #053549;
